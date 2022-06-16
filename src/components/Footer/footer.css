@@ -1,0 +1,21 @@
+.Footer{
+        background: #151515;
+        text-align: center;
+
+}
+.footer-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-text p {
+    line-height: 2.4;
+    font-family: "poppins-regular", sans-serif;
+}
+.contact-icon { 
+    font-size: 22px;
+    color: #fff;
+    padding-left: 18px;
+    padding-top: 5px;
+    margin: 3px; 
+} 

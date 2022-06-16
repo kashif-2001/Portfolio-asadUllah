@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins',sans-serif;
+}
+/* Header section */
+#root {
+  --clr-white: #FFF; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+h5{
+  text-transform: uppercase;
+  color: #FF0077;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-family: 'Poppins-bold', sans-serif;
+}
+/* btn */
+.transbtn {
+  font-family: 'Poppins-bold', sans-serif;
+  color: black;
+  font-weight: 700;
+  font-size: .9rem;
+  background-color: transparent;
+  border-color: black;
+  border: 3px solid black;
+  padding: 15px 50px;
+  letter-spacing: .20rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.transbtn:hover {
+  color: #cc005f;
+  border-color: #cc005f;
+  transition: 0.5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.blackbtn {
+  color: #fff;
+  font-weight: 600;
+  font-size: .9rem;
+  background-color: #313131;
+  /* border-color: rgba(255, 255, 255, 0.3); */
+  border: 3px solid #313131;
+  padding: 15px 40px;
+  letter-spacing: .18rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.blackbtn:hover {
+  background-color: black;
+  transition: 1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.bigbtn {
+  font-family: 'Poppins-bold', sans-serif;
+  color: #FFF;
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: .9rem;
+  background-color: #cc005f;
+  border: 3px solid #cc005f;
+  padding: 1rem 19rem;
+  letter-spacing: .20rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.bigbtn:hover {
+  color: #FFF;
+  border-color: #cc005f;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width : 700px){
+  .bigbtn{
+    padding: 1rem;
   }
 }

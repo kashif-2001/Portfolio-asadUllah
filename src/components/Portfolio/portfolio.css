@@ -1,0 +1,210 @@
+.portfolio{
+    text-align: center;
+    position: relative;
+    margin-top: 10rem;
+    overflow: hidden;
+}
+
+.portfolio .portfolio-intro h1{
+    margin-top: 10px;
+} 
+.portfolio .portfolio-intro p{
+    margin: 15px auto;
+    width: 600px;
+    line-height: 1.5;
+    font-size: 21px;
+}
+
+.portfolio-content{
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.folio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.folio-item img{
+    width: 100%;
+    padding: 0;
+    /* text-align: right; */
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.folio-item:hover img {
+    /* -webkit-transform: scale(1.05); */
+        /* -ms-transform: scale(1.05); */
+        /* transform: scale(1.05); */
+    transform: scale(1.1);
+}
+
+/* 1st column right alignment */
+
+.my-masonry-grid_column:nth-child(1) .folio-item:nth-child(1),
+.my-masonry-grid_column:nth-child(1) .folio-item:nth-child(2) {
+    text-align: right;
+}
+
+/* 2nd column right alignment */
+
+.my-masonry-grid_column:nth-child(2) .folio-item:nth-child(1),
+.my-masonry-grid_column:nth-child(2) .folio-item:nth-child(2) {
+    text-align: left;
+}
+
+.my-masonry-grid {
+    display: -webkit-box;
+    /* Not needed if autoprefixing */
+    display: -ms-flexbox;
+    /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: 0px;
+    /* gutter size offset */
+    width: auto;
+}
+
+.my-masonry-grid_column {
+    padding-left: 0px;
+    /* gutter size */
+    background-clip: padding-box;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    /* left: 20%; */
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff !important;
+    width: 100%;
+    opacity: 1;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transform: translateX(-30%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.overlay-text h1 {
+    margin: -1px auto 0;
+}
+
+.overlay-text p {
+    width: auto;
+    font-family: "Poppins-regular:sans-serif";
+    padding: 10px;
+    letter-spacing: 1.1;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.overlay:hover .overlay-text {
+    transform: translateX(0);
+}
+/* .overlay .overlay-text:hover{
+    opacity: 1;
+}
+.overlay-text h1:hover{
+    margin-right: 0;
+} */
+
+/* 
+.my-masonry-grid > .folio-item > img:nth-child(1),
+.my-masonry-grid > .folio-item > img:nth-child(3) {
+    margin-left: auto;
+} */
+
+/* MODEL SECTION SWAL SECTION */
+
+.swal2-title{
+    color: black !important;
+    text-align: left !important;
+    padding: 1rem !important;
+    font-size: 1rem !important;
+}
+.swal2-html-container{
+    font-size: 13px !important;
+    text-align: left !important;
+    margin-top: -10px !important;
+    margin-left: 15px !important;
+}
+/* Swal button */
+.swal2-styled.swal2-confirm{
+    background-color: black !important;
+    margin-right: 239px !important;
+        margin-top: 0px;
+        border: none !important;
+        padding: 15px 90px 15px 90px;
+}
+@media only screen and (max-width :508px){
+    .swal2-styled.swal2-confirm{
+        padding: 15px 50px;    }
+}
+.swal2-styled.swal2-confirm:hover {
+    background-color: #FF0077 !important;
+    transition: 00.5s;
+}
+.swal2-styled.swal2-confirm a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.swal2-styled.swal2-cancel{
+    margin: -65px 2px 0px 250px !important;
+    padding: 17px 89px;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #fff !important;
+    text-transform: uppercase;
+    background-color: black !important;
+}
+
+@media only screen and (max-width :400px) {
+    .swal2-styled.swal2-confirm {
+        padding: 15px 20px !important;
+        word-break: unset;
+        margin-left: 22px !important;
+    }
+
+    .swal2-styled.swal2-cancel {
+        padding: 15px 20px !important;
+    }
+}
+@media only screen and (max-width :508px) {
+    .swal2-styled.swal2-confirm {
+        padding: 15px 50px;
+        word-break: unset;
+        margin-left:22px !important ;
+    }
+    .swal2-styled.swal2-cancel{
+        padding: 17px 50px;
+        margin-right: 22px !important;
+    }
+}
+.swal2-styled.swal2-cancel:hover{
+    background-color: #FF0077 !important;
+    transition: 0.5s;
+}

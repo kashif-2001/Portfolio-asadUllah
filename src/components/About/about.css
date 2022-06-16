@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-family: "lora-regular", serif;
+    color: #888888;
+}
+
+
+
+.about{
+    text-align: center;
+    padding-top: 3rem;
+}
+.about h5{
+    color: #FF0077;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-family: 'Poppins-bold', sans-serif;
+}
+.about h1{
+    font-family: 'Poppins-semibold', sans-serif;
+    font-size: 2.2rem;
+        color: #313131;
+        line-height: 1.25;
+}
+.introinfo{
+    text-align: center;
+        max-width: 600px;
+        margin-top: 3rem;
+        margin: auto;
+        margin-top: 66px;
+        list-style: none;
+}
+.introinfo img{
+    width: 87px;
+    border-radius: 63px;
+    float: left;
+    margin-left: -30px;
+    padding: 13px 15px -1px 20px;
+    margin-right: 33px;
+     margin-top: 18px;
+}
+.lead{
+    font-size: 21px;
+    width: 647px;
+    text-align: left;
+    line-height: 1.5;
+    padding-right: 28px;
+}
+@media only screen and (max-width: 600px) {
+    .introinfo img{
+        float: none;
+        margin: auto;
+    }
+    .lead{
+
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+
+@media only screen and (max-width :400px) {
+}
+@media only screen and (max-width:1024){
+    
+}
+/* row and content  */
+
+.about-content{
+    /* position: relative; */
+        text-align: left;
+        max-width: 850px;
+        margin-top: 50px;
+        margin-bottom: 3.6rem;
+}
+
+.row{
+    width: 57%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 400px) {
+    .row {
+        margin: 1px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about-content {
+        text-align: center;
+    }
+    .row{
+        width: auto;
+    }
+}
+.col-six{
+    width: 50%;
+    float: left;
+    margin-top: 80px;
+}
+@media only screen and (max-width: 400px) {
+    .col-six {
+        float: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .col-six{
+        float: none;
+        width: auto;
+        text-align: left;
+        margin-left: 25px;
+    }
+}
+.about-content h3{
+    font-family: "poppins-bold", sans-serif;
+        font-size: 1rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: .20rem;
+        line-height: 4.5;
+}
+@media only screen and (max-width: 400px) {
+    .about-content h3 {
+        margin: 0px 0px -12px 144px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about-content h3{
+        margin: auto;
+    }
+}
+.about-content p{
+    font-size: 20px;
+    line-height: 1.5;
+    width: 90%;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 400px) {
+    .about-content p {
+        margin:8px;
+        width: 380px;;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about-content p {
+        text-align: left;
+    }
+}
+.info-list{
+    list-style: none;
+}
+
+.about-content .info-list li strong{
+    font-family: "poppins-bold", sans-serif;
+        color: #313131;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 3rem;
+    }
+        .about-content .info-list li span {
+            display: block;
+            font-family: "poppins-regular", sans-serif;
+            color: #888888;
+            font-size: 1rem;
+            line-height: 1;
+        }
+@media only screen and (max-width: 400px) {
+    .info-list {
+        margin: 8px;
+        width: 380px;
+        ;
+    }
+}
+        /* skill bar  */
+
+
+.skillbar li {
+    height: 0.4rem;
+    background: #a1a1a1;
+    width: 100%;
+    margin-top: 3.5rem;
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+.skillbar li .percent90 {
+    width: 90%;
+    height: 80%;
+
+}
+
+.skillbar li .progress {
+     background: #313131;
+     position: relative;
+     height: 80%;
+
+}
+@media only screen and (max-width: 400px) {
+    .skillbar {
+        margin: 8px;
+        width: 380px;
+        ;
+    }
+}
+
+
+.skillbar li span{
+    position: absolute;
+        right: 0;
+        top: -3.6rem;
+        display: block;
+        font-family: "poppins-regular", sans-serif;
+        color: white;
+        font-size: 1.1rem;
+        line-height: 1;
+        background: #313131;
+        padding: 0.6rem 0.6rem;
+        border-radius: 3px;
+}
+
+.skillbar li .progress span{
+    /* position: absolute; */
+        right: 0;
+        top: -2.2rem;
+        display: block;
+        font-family: "poppins-regular", sans-serif;
+        color: white;
+        font-size: .7rem;
+        line-height: 1;
+        background: #313131;
+        padding: 0.4rem 0.3rem;
+        border-radius: 3px;
+}
+
+.skillbar li .progress span::after{
+position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #313131;
+    content: "";
+}
+
+.skillbar li strong {
+    position: absolute;
+    left: 0;
+    top: -2rem;
+    font-family: "poppins-bold", sans-serif;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.skillbar li .percent5 {
+    width: 5%;
+}
+
+.skillbar li .percent10 {
+    width: 10%;
+}
+
+.skillbar li .percent15 {
+    width: 15%;
+}
+
+.skillbar li .percent20 {
+    width: 20%;
+}
+
+.skillbar li .percent25 {
+    width: 25%;
+}
+
+.skillbar li .percent30 {
+    width: 30%;
+}
+
+.skillbar li .percent35 {
+    width: 35%;
+}
+
+.skillbar li .percent40 {
+    width: 40%;
+}
+
+.skillbar li .percent45 {
+    width: 45%;
+}
+
+.skillbar li .percent50 {
+    width: 50%;
+}
+
+.skillbar li .percent55 {
+    width: 55%;
+}
+
+.skillbar li .percent60 {
+    width: 60%;
+}
+
+.skillbar li .percent65 {
+    width: 65%;
+}
+
+.skillbar li .percent70 {
+    width: 70%;
+}
+
+.skillbar li .percent75 {
+    width: 75%;
+}
+
+.skillbar li .percent80 {
+    width: 80%;
+}
+
+.skillbar li .percent85 {
+    width: 85%;
+}
+
+.skillbar li .percent90 {
+    width: 90%;
+}
+
+.skillbar li .percent95 {
+    width: 95%;
+}
+
+.skillbar li .percent100 {
+    width: 100%;
+}
+/* button */
+.btn {
+    text-align: center;
+    margin: 80px;
+}
+ .hirebtn{
+    color: black;
+    font-weight: 700;
+    font-size: .9rem;
+    background-color: transparent;
+    border-color: black;
+    border: 3px solid black;
+    padding: 15px 75px;
+    letter-spacing: .20rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+ 
+.hirebtn:hover {
+    color: #cc005f;
+    border-color: #cc005f;
+    transition: 1s;
+}
+.cvbtn{
+    color: #fff;
+        font-weight: 600;
+        font-size: .9rem;
+        background-color: #313131;
+        /* border-color: rgba(255, 255, 255, 0.3); */
+        border: 3px solid #313131;
+        padding: 15px 40px;
+        letter-spacing: .18rem;
+        cursor: pointer;
+        text-decoration: none;
+        margin-left: 50px;
+}
+.cvbtn:hover {
+    background-color: black;
+    transition: 1s;
+}
+@media only screen and (max-width: 400px) {
+    .hirebtn,.cvbtn{
+        display: block;
+            margin: 0px 0px 29px -68px;
+            width: 200px;
+            padding: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hirebtn,.cvbtn {
+        display: block;
+        margin: 22px;    
+    }
+}

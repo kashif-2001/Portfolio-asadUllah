@@ -1,0 +1,70 @@
+.contacts{
+    background:#151515 ;
+    text-align: center;
+}
+.contact-head{
+    padding-top: 120px;
+}
+.contacts h1{
+    color: #fff;
+}
+.contactP{
+    padding-top: 10px;
+        margin: auto;
+        font-family: "lora-regular", serif;
+        font-size: 21px;
+        width: 45%;
+        line-height: 1.5;
+        color: #888888;
+}
+.textfield{
+    margin-top: 80px;
+}
+input{
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    width: 50%;
+    padding-bottom: 25px;
+    margin-top: 40px;
+    font-size: 15px;
+    outline: none;
+    position: relative;
+}
+
+input:focus {
+    border-bottom: 1px solid #990047;
+    transition: 0.5s;
+}
+
+
+textarea{
+    margin-top: 20px;
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 50%;
+    color: #fff;
+    outline: none;
+    padding: 1px 10px 0px 12px;
+}
+textarea:focus {
+    border-bottom: 1px solid #990047;
+    transition: 0.5s;
+}
+
+.contact-info{
+    margin-top: 100px;
+}
+.contact-info h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contact-info p{
+    line-height: 2.4;
+    font-family: "poppins-regular", sans-serif;
+}
